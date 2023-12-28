@@ -1,0 +1,43 @@
+<div id="message_data" class="message-data" style="display: none;">
+            <header>Contact Message</header>
+
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Gmail</th>
+                    <th>Phone</th>
+                    <th>Message</th>
+                    <th>Contact Date</th>
+                    <th>Action</th>
+                </tr>
+            {{#each ContactMessages}}
+                <tr>
+                    <td>
+                        {{this.id}}
+                    </td>
+                    <td>
+                        {{this.contact_name}}
+                    </td>
+                    <td>
+                        {{this.contact_email}}
+                    </td>
+                    <td>
+                        {{this.contact_mobile}}
+                    </td>
+                    <td>
+                        {{this.contact_information}}
+                    </td>
+                    <td>
+                        {{this.contact_time}}
+                    </td>
+                    <td>
+                        <form action="admin/delete-messages" method="post">
+                                <input type="hidden" name="message_id" value="{{this.id}}">
+                                <button class="remove_btn" type="submit" name="removeButton{{this.id}}">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            {{/each}}
+            </table>
+        </div>

@@ -1,0 +1,306 @@
+/* text-shadow: inset var(--login-color) 10px 10px 10px 2px; */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --color-1 : #DADADA;
+    --color-2 : #303133;
+    --color-3 : #575757;
+}
+.login{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login form{
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px var(--color-2);
+    padding: 25px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login form .heading{
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px var(--color-2);
+    padding-bottom: 10px;
+    color: var(--color-2);
+}
+.login form .group{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+.login form .group input[type = text],
+.login form .group input[type = password]{
+    width: 280px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    margin: 5px 0 20px 0;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px var(--color-2);
+}
+.login form .group input[type = text]::placeholder,
+.login form .group input[type = password]::placeholder{
+    font-size: 17.5px;
+}
+
+.login form .group label{
+    margin: 0 0 5px 0;
+    font-size: 20px;
+}
+.login form .group input[type = submit]{
+    font-size: 20px;
+    padding: 10px 50px;
+    margin: 20px 0 10px 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 0px 10px var(--color-2);
+    border-radius: 7px;
+}
+
+.login form .group input[type = text]:hover,
+.login form .group input[type = password]:hover,
+.login form .group input[type = submit]:hover,
+
+.login form .group input[type = text]:focus,
+.login form .group input[type = password]:focus,
+
+.login form .group input[type = text]:hover::placeholder,
+.login form .group input[type = password]:hover::placeholder,
+
+.login form .group input[type = text]:focus::placeholder,
+.login form .group input[type = password]:focus::placeholder{
+    background-color: var(--color-3);
+    color: var(--color-1);
+}
+.login form .group-last{
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login form .group-last a{
+    padding: 5px 0;
+    color: var(--color-2);
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------- */
+
+.register{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register form{
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px var(--color-2);
+    padding: 25px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.register form .heading{
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px var(--color-2);
+    padding-bottom: 10px;
+    color: var(--color-2);
+}
+.register form .group{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+.register form .group input[type = text],
+.register form .group input[type = password]{
+    width: 280px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    margin: 5px 0 20px 0;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px var(--color-2);
+}
+.register form .group input[type = text]::placeholder,
+.register form .group input[type = password]::placeholder{
+    font-size: 17.5px;
+}
+
+.register form .group label{
+    margin: 0 0 5px 0;
+    font-size: 20px;
+}
+.register form .group input[type = submit]{
+    font-size: 20px;
+    padding: 10px 50px;
+    margin: 20px 0 10px 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 0px 10px var(--color-2);
+    border-radius: 7px;
+}
+
+.register form .group input[type = text]:hover,
+.register form .group input[type = password]:hover,
+.register form .group input[type = submit]:hover,
+
+.register form .group input[type = text]:focus,
+.register form .group input[type = password]:focus,
+
+.register form .group input[type = text]:hover::placeholder,
+.register form .group input[type = password]:hover::placeholder,
+
+.register form .group input[type = text]:focus::placeholder,
+.register form .group input[type = password]:focus::placeholder{
+    background-color: var(--color-3);
+    color: var(--color-1);
+}
+.register form .group-last{
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register form .group-last a{
+    padding: 5px 0;
+    color: var(--color-2);
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------- */
+
+.forget{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forget form{
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px var(--color-2);
+    padding: 25px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.forget form .heading{
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px var(--color-2);
+    padding-bottom: 10px;
+    color: var(--color-2);
+}
+.forget form .group{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+.forget form .group input[type = text],
+.forget form .group input[type = password]{
+    width: 280px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    margin: 5px 0 20px 0;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 10px var(--color-2);
+}
+.forget form .group input[type = text]::placeholder,
+.forget form .group input[type = password]::placeholder{
+    font-size: 17.5px;
+}
+
+.forget form .group label{
+    margin: 0 0 5px 0;
+    font-size: 20px;
+}
+.forget form .group input[type = submit]{
+    font-size: 20px;
+    padding: 10px 50px;
+    margin: 20px 0 10px 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 0px 10px var(--color-2);
+    border-radius: 7px;
+}
+
+.forget form .group input[type = text]:hover,
+.forget form .group input[type = password]:hover,
+.forget form .group input[type = submit]:hover,
+
+.forget form .group input[type = text]:focus,
+.forget form .group input[type = password]:focus,
+
+.forget form .group input[type = text]:hover::placeholder,
+.forget form .group input[type = password]:hover::placeholder,
+
+.forget form .group input[type = text]:focus::placeholder,
+.forget form .group input[type = password]:focus::placeholder{
+    background-color: var(--color-3);
+    color: var(--color-1);
+}
+.forget form .group-last{
+    padding: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.forget form .group-last a{
+    padding: 5px 0;
+    color: var(--color-2);
+}
+
+.forget .first-group{
+    margin: 0 0 20px 0;
+}
+
+.mobile-message{
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+    .register {
+      display: none;
+    }
+    .login{
+        display: none;
+    }
+    .mobile-message {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+      }
+}

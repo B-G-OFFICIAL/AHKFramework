@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --color-1 : #DADADA;
+    --color-2 : #303133;
+    --color-3 : #575757;
+    --color-4 : #000;
+    --color-5 : #FAFAFA;
+    --nav-wdt : 300px;
+}
+.create-ahk{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-1);
+}
+.create-ahk nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--nav-wdt);
+    height: 100vh;
+    background-color: var(--color-2);
+    overflow: auto;
+}
+.create-ahk nav::-webkit-scrollbar{
+    width: 0;
+}
+.create-ahk main{
+    width: calc(100% - var(--nav-wdt));
+    height: 100vh;
+    background: url('../IMAGES/Automation.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: var(--nav-wdt);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------- */
+
+
+/* navbar menus */
+svg{
+    fill: var(--color-1);
+}
+nav .header{
+    box-shadow: 0px 0px 10px var(--color-4);
+    margin: 10px;
+    padding: 20px 0;
+    font-size: 40px;
+    color: var(--color-1);
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    text-shadow: 3px 3px 5px var(--color-4);
+    letter-spacing: 1px;
+}
+nav .menus{
+    margin: 50px 0 30px 0;
+}
+nav .menu{
+    font-size: 20px;
+    height: 50px;
+    box-shadow: 0px 0px 10px var(--color-3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-1);
+    margin: 10px 15px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav .menu:hover{
+    background-color: var(--color-3);
+    box-shadow: 0px 0px 10px var(--color-4);
+}
+nav .dd-submenu{
+    display: none;
+}
+nav .dd-submenu .menu-2{
+    background-color: var(--color-3);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    height: 45px;
+    margin: 7px 20px;
+    box-shadow: 0px 0px 10px var(--color-4);
+}
+nav .dd-submenu .menu-2:hover{
+    background-color: var(--color-2);
+}
+
+.download{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.download button{
+    padding: 10px 25px;
+    border: none;
+    font-size: 22px;
+    letter-spacing: 2px;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    text-shadow: 2px 2px 5px #000;
+    border-radius: 7px;
+}
+
+/* ----- c_f_globle ----- */
+/* ----- inside main part of create file page ----- */
+
+.add_data_btn{
+    font-size: 22px;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 5px var(--color-4);
+    border-radius: 5px;
+    margin: 20px 0 10px 0;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+}
+
+.main_box{
+    background-color: var(--color-5);
+    padding: 20px;
+    box-shadow: 0 0 5PX var(--color-2);
+    border-radius: 10px;
+}
+
+h2{
+    margin: 10px 0 20px 0;
+}
+
+.pop-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    min-width: 250px;
+    height: 55px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 7px;
+    /* opacity: 0; */
+    transition: all 1s ease-in-out;
+}
+.success-text,
+.error-text{
+    padding: 20px;
+}
+.success-icon,
+.error-icon{
+    padding: 20px;
+}
+.success{
+    background-color: rgba(0, 255, 0, 0.1);
+    color: #1c6e00;
+    box-shadow: 0px 0px 5px #00ff00;
+    font-weight: bold;
+}
+.error{
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #FF0000;
+    box-shadow: 0px 0px 5px #FF0000;
+    font-weight: bold;
+}
+.success svg{
+    fill: #1c6e00;
+    font-weight: bold;
+}
+.error svg{
+    fill: #FF0000;
+    font-weight: bold;
+}
+
+
+/* click function */
+.click_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.click_data input[type = text]{
+    height: 40px;
+    width: 280px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 7px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px var(--color-2);
+}
+.click_data input[type = text]:focus{
+    background-color: var(--color-3);
+    box-shadow: 2px 2px 5px var(--color-4);
+    color: var(--color-1);
+}
+.click_data input[type = text]:focus::placeholder{
+    color: var(--color-1);
+}
+label{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.mobile-message{
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+    .create-ahk{
+        display: none;
+    }
+    .mobile-message {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+      }
+}

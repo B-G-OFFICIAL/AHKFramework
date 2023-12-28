@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHK Framework - Admin</title>
+    <link rel="stylesheet" href="CSS/admin.css">
+        <!-- SweetAlert2 CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+        <!-- SweetAlert2 JS -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+        function getURLParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const UrlMessageData = getURLParameter("UrlMessage");
+
+            const UrlMessage = document.getElementById("UrlMessageDiv");
+            if(UrlMessageData){
+                UrlMessage.style.display = 'Block';
+                UrlMessage.innerHTML = UrlMessageData;
+            }
+        });
+    </script>
+    <style>
+        #UrlMessageDiv{
+            background-color: rgb(199, 248, 255);
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            padding: 15px 20px;
+            border-radius: 5px;
+            border: 2px solid rgb(21, 0, 128);
+        }
+    </style>
+
+</head>
+<body>
+<div class="mobile-message">Mobile Device Are Not Supported</div>
+<!-- nav -->
+{{> a_nav}}
+    <main>
+        <!-- main profile data -->
+            {{> a_profile}}
+        <!-- main admin data -->
+            {{> a_admin_data}}
+        <!-- main message data -->
+            {{> a_contact}}
+    </main>
+    
+    <script src="JS/admin.js"></script>
+    <script src="JS/sweetalert.js"></script>
+</body>
+</html>

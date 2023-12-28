@@ -1,0 +1,22 @@
+/* */
+/* © Copyright AHK Framework*/
+/* Bhargav Ghori & Smit Meghani */
+/* ©copyright Bhargav Ghori & Smit Meghani can Development and Editing in this Web */
+
+/* How to Use */
+/*
+    ~ Just for Local Uses.
+        ~ As normal User kindly simple open web and start create automation script as it need on 'create file' menu
+
+    ~ Just for admin panel Uses.
+        ~ for some admin franqualy content and sensitive data so data can't update or delete dirct after delete you need logout and login.
+        ~ If you are admin and than you want create ahk file symple start as noramal user.
+        ~ if you are admin and open admin panel not go direct on admin url simple follow procedure and login with your phone or email and password.
+        ~ on admin panel you can add or remove admin or you can see contact messages and than delete from admin panel.
+*/
+
+/* This Initiative */
+/*
+    ~ Help Of Autohotkey user
+    ~ Framework not need Knowledge for script 
+*/

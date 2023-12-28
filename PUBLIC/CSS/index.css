@@ -1,0 +1,309 @@
+:root{
+    --clr-1 : #DADADA;
+    --clr-2 : #303133;
+    --header-hgt : 70px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: var(--clr-1);
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+header{
+    background-color: var(--clr-1);
+    top: 0;
+    position: sticky;
+    height: var(--header-hgt);
+    width: 100%;
+    box-shadow: 2px 2px 5px var(--clr-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    font-family: sans-serif;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    padding: 0 30px;
+}
+header .logo span{
+    font-size: 22px;
+    padding: 0 10px;
+}
+header .menus{
+    padding: 0 30px;
+    font-size: 18px;
+}
+header .menus a{
+    padding: 13px;
+    cursor: pointer;
+}
+header .menus a:hover,
+header .menus a:active{
+    background-color: var(--clr-2);
+    color: var(--clr-1);
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width : 820px){
+    header{
+        height: calc(2 * var(--header-hgt));
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+    header .logo{
+        padding: 0 0 20px 0;
+    }
+    header .menus{
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width : 480px){
+    header .menus{
+        display: flex;
+        overflow: auto;
+        word-wrap: break-word;
+        font-size: 16px;
+        padding: 0;
+    }
+    header .menus a{
+        padding: 10px;
+    }
+}
+@media screen and (max-width : 385px){
+    header .menus{
+        font-size: 15px;
+        padding: 0;
+    }
+    header .menus a{
+        padding: 5px;
+    }
+}
+
+
+/* -- main start -- */
+                                                /* Home */
+main{
+    margin: 15px;
+}
+main .cont-home{
+    width: 100%;
+}
+main .cont-home h1{
+    text-align: center;
+}
+main .cont-home h3{
+    letter-spacing: 1px;
+}
+main .cont-home p{
+    padding-bottom: 20px;
+}
+                                                /* About */
+main .cont-about h1{
+    text-align: center;
+}
+main .cont-about .data{
+    padding: 20px;
+}
+main .cont-about .data .how-to-use{
+    padding: 10px 20px;
+}
+main .cont-about .data .how-to-use h4{
+    text-decoration: underline;
+}
+main .cont-about .data .how-to-use p{
+    padding: 7px 0 15px 0;
+}
+main .cont-about .data .how-to-use p a{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+main .cont-about .data .how-to-use p span{
+    font-weight: bold;
+    color: darkblue;
+}
+main .cont-about .data .how-to-use p span span{
+    font-weight: bold;
+    color: red;
+}
+main .cont-about .data .admin-info p{
+    padding: 10px 20px;
+}
+main .cont-about .data .extra-info p{
+    padding: 10px 20px;
+}
+main .cont-about .data .extra-info h3{
+    padding: 10px 20px;
+}
+                                                /* Contact */
+main .cont-contact{
+    display: flex;
+    justify-content: center;
+}
+main .cont-contact form{
+    padding: 20px 40px;
+    box-shadow: 2px 2px 5px var(--clr-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .cont-contact form h1{
+    padding: 10px 0 20px 0;
+}
+main .cont-contact form .group{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+main .cont-contact form label{
+    font-size: 20px;
+}
+main .cont-contact form input{
+    width: 280px;
+    height: 38px;
+    font-size: 19px;
+    padding: 0 10px;
+}
+main .cont-contact form input,
+main .cont-contact form textarea{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 19px;
+}
+main .cont-contact form input[type = submit]{
+    width: 180px;
+    height: 38px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+/* footer code start hear */
+footer{
+    background-color: var(--clr-2);
+    color: var(--clr-1);
+    box-shadow: -2px -2px 5px var(--clr-2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+footer .logo{
+    font-family: sans-serif;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-weight: 500;
+    padding: 0 30px;
+}
+footer .logo span{
+    font-size: 25px;
+    padding: 0 10px;
+}
+footer .logo .slogun{
+    padding: 20px 0;
+    font-size: 19px;
+}
+footer .menus{
+    color: var(--clr-1);
+    display: flex;
+    flex-direction: column;
+}
+footer .menus .quik-links{
+    padding-bottom: 20px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+footer .menus a{
+    font-size: 17px;
+    color: var(--clr-1);
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+footer .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+}
+footer .contact form input{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0 10px;
+    outline: none;
+}
+footer .contact form input[type = submit]{
+    margin: 10px 0;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 19px;
+}
+footer .contact .social-media svg{
+    padding: 10px;
+    font-size: 30px;
+    fill: #FFF;
+}
+
+
+@media screen and (max-width : 700px){
+    footer{
+        flex-direction: column;
+    }
+    footer .logo{
+        padding: 20px 0;
+    }
+    footer .menus{
+        justify-content: start;
+        padding: 20px 0;
+    }
+    footer .contact{
+        padding: 20px 0;
+    }
+}
+
+
+/* ================================================== End Main ================================================== */
+.mobile-message{
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+    header {
+        display: none;
+    }
+    main {
+      display: none;
+    }
+    footer {
+        display: none;
+    }
+    .mobile-message {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+      }
+}

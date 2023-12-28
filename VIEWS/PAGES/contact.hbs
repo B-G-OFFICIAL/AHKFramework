@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHK Framework - Contact</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script>
+        function getURLParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const UrlMessageData = getURLParameter("UrlMessageData");
+
+            const UrlMessage = document.getElementById("UrlMessage");
+            if(UrlMessageData){
+                UrlMessage.style.display = 'Block';
+                UrlMessage.innerHTML = UrlMessageData;
+            }
+        });
+    </script>
+    <style>
+        #UrlMessage{
+            background-color: rgb(199, 248, 255);
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            padding: 15px 20px;
+            border-radius: 5px;
+            border: 2px solid rgb(21, 0, 128);
+        }
+    </style>
+</head>
+<body>
+        <div id="UrlMessage" style="display: none"></div>
+    <div class="mobile-message">Mobile Device Are Not Supported</div>
+    {{> header}}
+    <main>
+        <div class="cont-contact">
+        <form method="post" action="addcontact">
+            <h1>Contact Us</h1>
+            <div class="group">
+                <label for="name">Name *</label>
+                <input type="text" name="contact_name" id="" placeholder="Enter Your Name" maxlength="20" autocomplete="off" required>
+            </div>
+            <div class="group">
+                <label for="email">Email *</label>
+                <input type="text" name="contact_email" id="" placeholder="Enter Your Email" pattern=".{3,}@gmail\.com" maxlength="55" autocomplete="off" required>
+            </div>
+            <div class="group">
+                <label for="mobile no">Mobile No *</label>
+                <input type="tel" name="contact_mobile" id="contact_mobile" placeholder="Enter Your Mobile No" maxlength="10" autocomplete="off" pattern="[6-9]{1}[0-9]{9}" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+            </div>
+            <div class="group">
+                <label for="detail">Information</label>
+                <textarea name="contact_information" id="" cols="25" rows="7" autocomplete="off"></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+        </main>
+    {{> footer}}
+    <script src="./JS/index.js"></script>
+</body>
+</html>
